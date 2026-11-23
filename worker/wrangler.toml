@@ -1,0 +1,14 @@
+# Only needed if you deploy with the wrangler CLI (needs Node.js). The dashboard route in README.md needs none of this.
+name = "pizza-pantas-api"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "pizza-pantas"
+database_id = "PASTE-YOUR-D1-DATABASE-ID-HERE"
+
+[vars]
+# Exact origins (scheme + host, no trailing slash) that may call this API from a browser.
+ALLOWED_ORIGINS = "https://manorazali.github.io,http://localhost:5173"
+# PBKDF2_ITER = "100000"   # Workers allow at most 100000. See README if the free plan hits CPU limits.

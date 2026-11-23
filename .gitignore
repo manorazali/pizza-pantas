@@ -1,0 +1,11 @@
+# Cloudflare / Node tooling
+.wrangler/
+node_modules/
+.dev.vars
+
+# Editors and OS
+.vs/
+.vscode/
+*.log
+Thumbs.db
+.DS_Store
